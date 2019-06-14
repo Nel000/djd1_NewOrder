@@ -1,15 +1,11 @@
 fileFormatVersion: 2
-guid: b8044a34e87255d44a56b6f376f2826e
+guid: aff90ea0d045f334da91af61b62fc127
 TextureImporter:
   fileIDToRecycleName:
-    21300000: edwad run-with a shield_0
-    21300002: edwad run-with a shield_1
-    21300004: edwad run-with a shield_2
-    21300006: edwad run-with a shield_3
-    21300008: edwad run-with a shield_4
-    21300010: edwad run-with a shield_5
-    21300012: edwad run-with a shield_6
-    21300014: edwad run-with a shield_7
+    21300000: crouchwad_0
+    21300002: crouchwad_1
+    21300004: crouchwad_2
+    21300006: crouchwad_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -53,7 +49,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 36
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,161 +88,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: edwad run-with a shield_0
+      name: crouchwad_0
       rect:
         serializedVersion: 2
-        x: 203
+        x: 267
         y: 0
-        width: 1709
-        height: 3200
+        width: 933
+        height: 1333
       alignment: 9
-      pivot: {x: 0.4999997, y: 0.46934596}
+      pivot: {x: 0.51065904, y: 0.746867}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf0223f6a8e5a2843b52790b4f7857e0
+      spriteID: d9352bd19882bab498b2cafdfa3d889e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: edwad run-with a shield_1
+      name: crouchwad_1
       rect:
         serializedVersion: 2
-        x: 2347
+        x: 1472
         y: 0
-        width: 2122
-        height: 3200
+        width: 913
+        height: 1333
       alignment: 9
-      pivot: {x: 0.4999997, y: 0.46934596}
+      pivot: {x: 0.51065904, y: 0.746867}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5319fed9cc010c640b053c191b94d427
+      spriteID: 1f3ddedde0008bc4e8e11bdf28b08540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: edwad run-with a shield_2
+      name: crouchwad_2
       rect:
         serializedVersion: 2
-        x: 4756
+        x: 2624
         y: 0
-        width: 1800
-        height: 3200
+        width: 952
+        height: 1333
       alignment: 9
-      pivot: {x: 0.4999997, y: 0.46934596}
+      pivot: {x: 0.51065904, y: 0.746867}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b8a09d0f0b9f342a2d4d9cf7f75ce3
+      spriteID: f4b209f3320cc444488349de2421e164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: edwad run-with a shield_3
+      name: crouchwad_3
       rect:
         serializedVersion: 2
-        x: 6598
+        x: 3867
         y: 0
-        width: 1926
-        height: 3200
+        width: 890
+        height: 1333
       alignment: 9
-      pivot: {x: 0.4999997, y: 0.46934596}
+      pivot: {x: 0.51065904, y: 0.746867}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72e80e7985c87da46a8f9a691b58d7cf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: edwad run-with a shield_4
-      rect:
-        serializedVersion: 2
-        x: 8643
-        y: 0
-        width: 2157
-        height: 3200
-      alignment: 9
-      pivot: {x: 0.4999997, y: 0.46934596}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 456f37e999d9e9c458b14eb2f7a7016d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: edwad run-with a shield_5
-      rect:
-        serializedVersion: 2
-        x: 10814
-        y: 0
-        width: 2368
-        height: 3200
-      alignment: 9
-      pivot: {x: 0.4999997, y: 0.46934596}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9913afd90ccf9844eb0055280ad99366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: edwad run-with a shield_6
-      rect:
-        serializedVersion: 2
-        x: 13399
-        y: 0
-        width: 2577
-        height: 3200
-      alignment: 9
-      pivot: {x: 0.4999997, y: 0.46934596}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c81cd967255c1bb49b66a8fd44845493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: edwad run-with a shield_7
-      rect:
-        serializedVersion: 2
-        x: 16060
-        y: 0
-        width: 2164
-        height: 3200
-      alignment: 9
-      pivot: {x: 0.4999997, y: 0.46934596}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c0776480ea6061478539302e18a3f8b
+      spriteID: b9abd4bb8f878c745a74c23a8c0cd8a3
       vertices: []
       indices: 
       edges: []
@@ -254,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4e0d8db3dd438294aab69b19c4505202
+    spriteID: 83af4d81949715945b70931f82f1c703
     vertices: []
     indices: 
     edges: []

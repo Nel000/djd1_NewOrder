@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: e9a2f595d0ae87546bac45421ac48aca
+guid: 622fdd3f4739470408cd83d82357c41e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: jumpwadhack_0
+    21300000: crouchwadshield_0
+    21300002: crouchwadshield_1
+    21300004: crouchwadshield_2
+    21300006: crouchwadshield_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,21 +88,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jumpwadhack_0
+      name: crouchwadshield_0
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 336
-        width: 2357
-        height: 3940
+        x: 262
+        y: 0
+        width: 1163
+        height: 1333
       alignment: 9
-      pivot: {x: 0.5025453, y: 0.6325554}
+      pivot: {x: 0.51065904, y: 0.746867}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78c012096d601c14190ba9e3e67513e1
+      spriteID: 9f724c91b9c744849a1c70a59492740d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouchwadshield_1
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 0
+        width: 1183
+        height: 1333
+      alignment: 9
+      pivot: {x: 0.51065904, y: 0.746867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7780302432d1cf41bf4fc1133d79e1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouchwadshield_2
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 0
+        width: 1179
+        height: 1333
+      alignment: 9
+      pivot: {x: 0.51065904, y: 0.746867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2347e558f2dbb499c35517b4c0e86a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouchwadshield_3
+      rect:
+        serializedVersion: 2
+        x: 3819
+        y: 0
+        width: 1181
+        height: 1333
+      alignment: 9
+      pivot: {x: 0.51065904, y: 0.746867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25296ae6d8e60fe4080c4d85885f632c
       vertices: []
       indices: 
       edges: []
@@ -107,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a12427942a05b3f46861e27cdddbd606
+    spriteID: f178b1f104481794c93340cec73bfdf8
     vertices: []
     indices: 
     edges: []

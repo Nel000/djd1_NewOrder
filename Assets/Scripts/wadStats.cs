@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class wadStats 
 {
-    private int health;
-    private int shield;
+    public int health;
+    public int shield;
 
     public int maxHP = 5;
     public int maxShield = 2;
