@@ -13,6 +13,7 @@ public class MonsterCtrl : MonoBehaviour
     //float dazedTime;
     //public float startDazedTime;
 
+    Collider2D damageCollider;
     Rigidbody2D rb;
     public GameObject bloodEffect;
 
