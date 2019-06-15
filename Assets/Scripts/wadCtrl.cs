@@ -56,6 +56,7 @@ public class wadCtrl : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(rB.velocity.x));
         anim.SetBool("isOnGround", isOnGround);
         anim.SetFloat("vSpeed", rB.velocity.y);
+        anim.SetBool("Attack", Input.GetKey(KeyCode.Z));
     }
 
     void Move()

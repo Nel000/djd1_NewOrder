@@ -10,6 +10,8 @@ public class MonsterCtrl : MonoBehaviour
     public float speed;
 
     public int health;
+    //float dazedTime;
+    //public float startDazedTime;
 
     Rigidbody2D rb;
     public GameObject bloodEffect;
@@ -40,6 +42,16 @@ public class MonsterCtrl : MonoBehaviour
             dir *= -1;
         }
 
+        /*if (dazedTime <= 0)
+        {
+            speed = -75;
+        }
+        else
+        {
+            speed = 0;
+            dazedTime -= Time.deltaTime;
+        }*/
+
         if (health <= 0)
         {
             Destroy(gameObject);
@@ -60,6 +72,7 @@ public class MonsterCtrl : MonoBehaviour
 
     public void TakeDamage (int damage)
     {
+        //dazedTime = startDazedTime;
         Instantiate(bloodEffect, transform.position, Quaternion.identity);
         health -= damage;
         Debug.Log("HIT");
