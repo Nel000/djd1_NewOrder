@@ -9,7 +9,10 @@ public class MonsterCtrl : MonoBehaviour
     public float range;
     public float speed;
 
+    public int health;
+
     Rigidbody2D rb;
+    public GameObject bloodEffect;
 
     void Start()
     {
@@ -36,6 +39,11 @@ public class MonsterCtrl : MonoBehaviour
             speed *= -1;
             dir *= -1;
         }
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void FixedUpdate()
@@ -48,5 +56,12 @@ public class MonsterCtrl : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    public void TakeDamage (int damage)
+    {
+        Instantiate(bloodEffect, transform.position, Quaternion.identity);
+        health -= damage;
+        Debug.Log("HIT");
     }
 }

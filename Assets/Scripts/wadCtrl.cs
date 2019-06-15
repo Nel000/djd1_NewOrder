@@ -5,7 +5,7 @@ using UnityEngine;
 public class wadCtrl : MonoBehaviour
 {
     Rigidbody2D rB;
-    Animator anim;
+    public Animator anim;
 
     public float hMove;
     public float speed = 5.5f;

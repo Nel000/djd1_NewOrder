@@ -143,12 +143,10 @@ public class Wad : MonoBehaviour
         }
         else if(playerStats.Shield == 0)
         {
-            //sound
             playerC.shield = false;
         }
         else
         {
-            //sound
             Debug.Log("FULL SHIELD");
         }
     }
