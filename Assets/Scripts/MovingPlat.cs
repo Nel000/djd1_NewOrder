@@ -8,6 +8,15 @@ public class MovingPlat : MonoBehaviour
     public int startingPoint;
     public int targetPoint;
     public float speed;
+    public bool move;
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            move = true;
+        }
+    }
 
     void Start()
     {
@@ -16,14 +25,17 @@ public class MovingPlat : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, point[targetPoint].position, speed * Time.deltaTime);
-        if (transform.position == point[targetPoint].position)
+        if (move == true)
         {
-            targetPoint++;
-            if (targetPoint == point.Length)
+            transform.position = Vector2.MoveTowards(transform.position, point[targetPoint].position, speed * Time.deltaTime);
+            if (transform.position == point[targetPoint].position)
             {
-                targetPoint = 0;
+                targetPoint++;
+                if (targetPoint == point.Length)
+                {
+                    targetPoint = 0;
+                }
             }
-        }
+        }       
     }
 }
