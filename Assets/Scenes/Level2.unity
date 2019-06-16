@@ -384,7 +384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &185665836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2391,13 +2391,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1792399097}
   - component: {fileID: 1792399096}
+  - component: {fileID: 1792399098}
   - component: {fileID: 1792399092}
   - component: {fileID: 1792399095}
   - component: {fileID: 1792399094}
   - component: {fileID: 1792399093}
   m_Layer: 10
   m_Name: Immortal
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2409,7 +2410,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792399091}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d8b9db9d26522a439558bca406b5644, type: 3}
   m_Name: 
@@ -2551,6 +2552,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792399098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792399091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5baa110a67325614ca135c8aab1e1b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 75
+  groundSensor: {fileID: 1595411955}
+  wallSensor: {fileID: 759502763}
+  damageCollider: {fileID: 1792399094}
+  maxHP: 3
+  invulnerableDuration: 1
+  deathPrefab: {fileID: 0}
+  health: 3
+  bloodEffect: {fileID: 5711982706431445444, guid: 199f9485f1a8c284ba43e8279e0aca3a,
+    type: 3}
 --- !u!1 &1795190257
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,10 +3120,6 @@ PrefabInstance:
       propertyPath: damageScreen
       value: 
       objectReference: {fileID: 2126266158}
-    - target: {fileID: 1891045654, guid: 4930913bf6a27a149b7112a4afea3d87, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 563155008750032506, guid: 4930913bf6a27a149b7112a4afea3d87,
         type: 3}
       propertyPath: startTimeBtwAttack
@@ -3124,6 +3143,10 @@ PrefabInstance:
     - target: {fileID: 563155008750032506, guid: 4930913bf6a27a149b7112a4afea3d87,
         type: 3}
       propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891045654, guid: 4930913bf6a27a149b7112a4afea3d87, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

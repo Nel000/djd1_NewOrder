@@ -36,12 +36,7 @@ public class MonsterCtrl : MonoBehaviour
                 dir *= -1;
             }
         }
-        if (hit == false || hit.collider.CompareTag("Player"))
-        {
-            Flip();
-            speed *= -1;
-            dir *= -1;
-        }
+
 
         /*if (dazedTime <= 0)
         {
