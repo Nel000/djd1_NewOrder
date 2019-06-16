@@ -68,6 +68,8 @@ public class wadCtrl : MonoBehaviour
         anim.SetBool("isOnGround", isOnGround);
         anim.SetFloat("vSpeed", rB.velocity.y);
         anim.SetBool("Attack", Input.GetKey(KeyCode.Z));
+        anim.SetBool("Throw", Input.GetButtonDown("Fire1"));
+        anim.SetBool("ThrowAvailable", Time.time > nextFire);
     }
 
     void Move()
