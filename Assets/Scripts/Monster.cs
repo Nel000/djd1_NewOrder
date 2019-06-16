@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Monstro : MonoBehaviour
+public class Monster : MonoBehaviour
 {
     [SerializeField] float moveSpeed;
     [SerializeField] Transform groundSensor;

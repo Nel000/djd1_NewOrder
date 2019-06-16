@@ -37,7 +37,12 @@ public class Wad : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Arrow"))
         {
-            DamagePlayer(arrowDamage);            
+            DamagePlayer(arrowDamage);
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.CompareTag("Monster"))
+        {
+            DamagePlayer(1);
         }
         if (other.gameObject.CompareTag("Spike"))
         {
@@ -74,6 +79,10 @@ public class Wad : MonoBehaviour
         {
             DamageWithShield(arrowDamage);
             Destroy(other.gameObject);
+        }
+        if (other.gameObject.CompareTag("Monster"))
+        {
+            DamageWithShield(1);
         }
     }
 

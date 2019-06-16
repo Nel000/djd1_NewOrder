@@ -24,6 +24,11 @@ public class wadCtrl : MonoBehaviour
     private float crouch;
     public bool crouching;
 
+    public GameObject bulletRight, bulletLeft;
+    Vector2 bulletPos;
+    public float fireRate = 0.5f;
+    float nextFire = 0.0f;
+
     public bool shield = false;
 
     void Start()
@@ -41,6 +46,12 @@ public class wadCtrl : MonoBehaviour
         CrouchFunction();
 
         AnimationControl();
+
+        if (Input.GetButtonDown ("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Fire();
+        }
     }
 
     private void FixedUpdate()
@@ -82,6 +93,21 @@ public class wadCtrl : MonoBehaviour
             transform.localScale = theScale;
         }
 
+    }
+
+    void Fire()
+    {
+        bulletPos = transform.position;
+        if(facingRight)
+        {
+            bulletPos += new Vector2(+1f, -0.55f);
+            Instantiate(bulletRight, bulletPos, Quaternion.identity);
+        }
+        else
+        {
+            bulletPos += new Vector2(-1f, -0.55f);
+            Instantiate(bulletLeft, bulletPos, Quaternion.identity);
+        }
     }
 
     void CrouchFunction()

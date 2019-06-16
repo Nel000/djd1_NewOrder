@@ -24,7 +24,7 @@ public class wadAttack : MonoBehaviour
 
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<MonsterCtrl>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<Monster>().TakeDamage(damage);
                 }
             }
 
