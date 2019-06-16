@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: ad88e7fef02c9e742816100027cb80af
   - enabled: 1
-    path: Assets/Scenes/TransitionScreen.unity
-    guid: 90578f1147e487547a6eeec6d15fa02f
-  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 479749c21ef5fbd49b918785d1c1e0d1
   - enabled: 1
@@ -30,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3.unity
     guid: b067310b00d143247a7e11e7298c08be
   - enabled: 1
+    path: Assets/Scenes/FinalLevel.unity
+    guid: 10d73e5dfb3509343a581ef22432a3ce
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 5410abb9f8e1cbc408512b16ddcf5115
+  - enabled: 1
+    path: Assets/Scenes/LoadingTest.unity
+    guid: 90578f1147e487547a6eeec6d15fa02f
   m_configObjects: {}
