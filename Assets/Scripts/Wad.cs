@@ -132,7 +132,7 @@ public class Wad : MonoBehaviour
         if (playerStats.Health <= 0)
         {
             Destroy(gameObject);
-            GameMng.GM.StartCoroutine(GameMng.GM.Respawn());
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 
