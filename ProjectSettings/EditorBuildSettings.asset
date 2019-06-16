@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: ad88e7fef02c9e742816100027cb80af
   - enabled: 1
+    path: Assets/Scenes/Backstory1.unity
+    guid: 8b320d2e53d1f0c48b576b11c38d0572
+  - enabled: 1
+    path: Assets/Scenes/Backstory2.unity
+    guid: f3307c6840071eb4f96548420ae34d33
+  - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
     guid: 479749c21ef5fbd49b918785d1c1e0d1
   - enabled: 1
@@ -32,9 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 5410abb9f8e1cbc408512b16ddcf5115
-  - enabled: 1
-    path: Assets/Scenes/LoadingTest.unity
-    guid: 90578f1147e487547a6eeec6d15fa02f
   - enabled: 1
     path: Assets/Scenes/Instructions.unity
     guid: f0f5dd30cff1ea44387232cdc21bef3a
