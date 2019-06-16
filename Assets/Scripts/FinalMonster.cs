@@ -51,55 +51,58 @@ public class FinalMonster : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 currentVelocity = rigidBody.velocity;
-
-        currentVelocity.x = -transform.right.x * moveSpeed;
-
-        rigidBody.velocity = currentVelocity;
-
-        if (Mathf.Abs(currentVelocity.y) < 0.1f)
+        if (move == true)
         {
-            Collider2D groundCollider = Physics2D.OverlapCircle(groundSensor.position, 2.0f, LayerMask.GetMask("Ground"));
-            if (groundCollider == null)
+            Vector3 currentVelocity = rigidBody.velocity;
+
+            currentVelocity.x = -transform.right.x * moveSpeed;
+
+            rigidBody.velocity = currentVelocity;
+
+            if (Mathf.Abs(currentVelocity.y) < 0.1f)
+            {
+                Collider2D groundCollider = Physics2D.OverlapCircle(groundSensor.position, 2.0f, LayerMask.GetMask("Ground"));
+                if (groundCollider == null)
+                {
+                    transform.rotation = transform.rotation * Quaternion.AngleAxis(180.0f, Vector3.up);
+                }
+            }
+
+            Collider2D wallCollider = Physics2D.OverlapCircle(wallSensor.position, 2.0f, LayerMask.GetMask("Ground"));
+            if (wallCollider)
             {
                 transform.rotation = transform.rotation * Quaternion.AngleAxis(180.0f, Vector3.up);
             }
-        }
 
-        Collider2D wallCollider = Physics2D.OverlapCircle(wallSensor.position, 2.0f, LayerMask.GetMask("Ground"));
-        if (wallCollider)
-        {
-            transform.rotation = transform.rotation * Quaternion.AngleAxis(180.0f, Vector3.up);
-        }
-
-        if (damageCollider)
-        {
-            ContactFilter2D filter = new ContactFilter2D();
-            filter.ClearLayerMask();
-            filter.SetLayerMask(LayerMask.GetMask("Player"));
-
-            Collider2D[] results = new Collider2D[8];
-
-            int nCollision = Physics2D.OverlapCollider(damageCollider, filter, results);
-
-            if (nCollision > 0)
+            if (damageCollider)
             {
-                foreach (var collider in results)
-                {
-                    if (collider)
-                    {
-                        Wad wad = collider.GetComponent<Wad>();
-                        if (wad)
-                        {
-                            Vector3 hitDirection = (wad.transform.position - transform.position).normalized;
-                            hitDirection.y = 1.0f;
+                ContactFilter2D filter = new ContactFilter2D();
+                filter.ClearLayerMask();
+                filter.SetLayerMask(LayerMask.GetMask("Player"));
 
-                            wad.DamagePlayer(1);
+                Collider2D[] results = new Collider2D[8];
+
+                int nCollision = Physics2D.OverlapCollider(damageCollider, filter, results);
+
+                if (nCollision > 0)
+                {
+                    foreach (var collider in results)
+                    {
+                        if (collider)
+                        {
+                            Wad wad = collider.GetComponent<Wad>();
+                            if (wad)
+                            {
+                                Vector3 hitDirection = (wad.transform.position - transform.position).normalized;
+                                hitDirection.y = 1.0f;
+
+                                wad.DamagePlayer(1);
+                            }
                         }
                     }
                 }
             }
-        }
+        }      
     }
 
     private void Update()
