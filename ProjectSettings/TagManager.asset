@@ -12,6 +12,7 @@ TagManager:
   - Ground
   - Platform
   - Monster
+  - Music
   layers:
   - Default
   - TransparentFX
